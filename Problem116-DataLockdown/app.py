@@ -8,5 +8,4 @@ for case in range(cases):
         url = lineSplit[0]
         size = int(lineSplit[1])
         if not url.endswith(".lmco.com") and size > 1000:
-            print(" ")
             print(f"{url} {size}")
