@@ -10,7 +10,7 @@ count = int(input())
 
 for i in range(count):
     colorDest = input()
-    if colorDest.lower() in prim:
+    if colorDest in prim:
         print(f"No colors need to be mixed to make {colorDest}.")
     else:
         print(f"In order to make {colorDest}, {colors[colorDest][0]} and {colors[colorDest][1]} must be mixed.")
