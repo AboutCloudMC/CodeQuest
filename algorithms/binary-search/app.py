@@ -1,4 +1,4 @@
-
+import sys
 
 def search(target, data):
     while True:
@@ -11,6 +11,12 @@ def search(target, data):
             data = data[:middle-1]
         print(data)
 
-dataset = [1, 3, 5, 6, 7]
+def read_line():
+    return sys.stdin.readline().strip()
+        
+dataset = []
+count = int(read_line())
+for i in range(count):
+    dataset.append(int(read_line()))
 
 print(search(6, dataset))

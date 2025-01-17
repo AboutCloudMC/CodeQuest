@@ -1,6 +1,12 @@
-extensions = {}
-count = int(input())
+import sys
 
+extensions = {}
+
+def read_line():
+    return sys.stdin.readline().strip()
+        
+dataset = []
+count = int(read_line())
 for i in range(count):
     line = input()
     ext = line.split(".")[1]
@@ -11,3 +17,4 @@ for i in range(count):
 
 for ext in extensions:
     print(f"{ext} {extensions[ext]}")
+
