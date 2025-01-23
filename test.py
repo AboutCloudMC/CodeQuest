@@ -40,9 +40,13 @@ script_path = f"{arg}/app.py"  # Path to the script that gets tested
 
 result = execute_script(script_path, input_data)
 output = result["stdout"]
+error = result["stderr"]
 
 #Test Result Output
 print("Output:\n" + output)
 print("Expected Output:\n" + output_data)
     
 print("Test Successful:", output.strip()==output_data.strip())
+
+if not error == "":
+    print("\nError:\n" + error)
