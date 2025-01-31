@@ -4,7 +4,6 @@
 This repository contains my solutions to various problems from the Lockheed Martin CodeQuest Academy. Each solution is implemented in Python and includes detailed explanations and test cases.
 
 ## Table of Contents
-s
 - [Introduction](#introduction)
 - [Testing](#testing)
 - [Problem List](#problem-list)
